@@ -4,10 +4,6 @@ const BookController = require('../controllers/book');
 const swaggerSpec = require('./docs');
 
 function apply(app) {
-  app.get('/', (req, res) => {
-    res.send('ping');
-  });
-
   app.get('/v1/books', BookController.index);
   app.post('/v1/books', BookController.store);
   app.patch('/v1/books/:id', BookController.update);
