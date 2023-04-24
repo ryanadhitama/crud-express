@@ -20,8 +20,7 @@ module.exports = {
     await queryInterface.bulkDelete(
       'books',
       {
-        title: {
-          [Op.in]: books
+        title: { [Op.in]: books
         }
       },
       {}
