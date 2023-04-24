@@ -1,8 +1,15 @@
-const error = (error) => {
+const exception = (error) => {
   return {
     status: error?.status || 500,
     message: error?.message || 'Internal server error'
   };
 };
 
-module.exports = error;
+class HTTPException extends Error {
+  constructor(message, { status }) {
+    super(message);
+    this.status = status;
+  }
+}
+
+module.exports = { exception, HTTPException };

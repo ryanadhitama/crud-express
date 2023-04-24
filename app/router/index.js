@@ -7,7 +7,7 @@ function apply(app) {
 
   app.get('/books', BookController.index);
   app.post('/books', BookController.store);
-  app.patch('/books/:id', BookController.store);
+  app.patch('/books/:id', BookController.update);
   app.get('/books/:id', BookController.find);
   app.delete('/books/:id', BookController.destroy);
 
