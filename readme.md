@@ -21,10 +21,10 @@
 
 ## Endpoint list
 
-| Route      | Method   | Description       |
-| ---------- | -------- | ----------------- |
-| /books     | `GET`    | Get books list    |
-| /books/:id | `GET`    | Get book by ID    |
-| /books     | `POST`   | Save new book     |
-| /books/:id | `PUT`    | Update book by ID |
-| /books/:id | `DELETE` | Delete book ID    |
+| Route         | Method   | Description       |
+| ------------- | -------- | ----------------- |
+| /v1/books     | `GET`    | Get books list    |
+| /v1/books/:id | `GET`    | Get book by ID    |
+| /v1/books     | `POST`   | Save new book     |
+| /v1/books/:id | `PUT`    | Update book by ID |
+| /v1/books/:id | `DELETE` | Delete book ID    |

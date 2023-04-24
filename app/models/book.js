@@ -26,3 +26,22 @@ module.exports = (sequelize, DataTypes) => {
   );
   return Book;
 };
+
+/**
+ * @openapi
+ * components:
+ *    schemas:
+ *      Book:
+ *        type: object
+ *        properties:
+ *          id:
+ *            type: number
+ *          title:
+ *            type: string
+ *          description:
+ *            type: string
+ *          created_at:
+ *            type: date
+ *          updated_at:
+ *            type: date
+ */
